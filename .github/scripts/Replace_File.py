@@ -18,7 +18,7 @@ def move_files(source_dir):
             for name in mp:
               if name in filename:
                 src_path = os.path.join(source_dir, filename)
-                dst_path = os.path.join(f"./Solutions/{mp[name]}/", filename.replace(f"{mp[name]}-", ""))
+                dst_path = os.path.join(f"./Solutions/{mp[name]}/", filename.replace(f"{name}-", ""))
                 shutil.move(src_path, dst_path)
                 
 
