@@ -26,8 +26,12 @@ def move_files(source_dir):
             src_path = os.path.join(source_dir, filename)
             
             problem = filename.replace(f"{judge}-", "")
-            
-            dst_path = os.path.join(f"./Solutions/{judge}/{os.path.splitext(problem)[0]}", problem)
+            problem_store_folder = f"./Solutions/{mp[judge]}/{os.path.splitext(problem)[0]}"
+
+            if not os.path.exists(problem_store_folder):
+               os.makedirs(problem_store_folder)
+
+            dst_path = os.path.join(problem_store_folder, os.path.splitext(problem)[0]+f"-{len(os.listdir(problem_store_folder))}"+os.path.splitext(problem)[1])
             shutil.move(src_path, dst_path)
                 
 
