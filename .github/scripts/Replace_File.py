@@ -15,11 +15,20 @@ def move_files(source_dir):
             
             mp = {"ZEROJUDGE":"ZeroJudge", "CODEFORCES":"CodeForces"}
             # 移动文件
+            
+            
+            judge = None
             for name in mp:
               if name in filename:
-                src_path = os.path.join(source_dir, filename)
-                dst_path = os.path.join(f"./Solutions/{mp[name]}/", filename.replace(f"{name}-", ""))
-                shutil.move(src_path, dst_path)
+                judge = name
+            if judge == None:
+                continue
+            src_path = os.path.join(source_dir, filename)
+            
+            problem = filename.replace(f"{judge}-", "")
+            
+            dst_path = os.path.join(f"./Solutions/{judge}/{os.path.splitext(problem)[0]}", problem)
+            shutil.move(src_path, dst_path)
                 
 
 if __name__ == "__main__":
