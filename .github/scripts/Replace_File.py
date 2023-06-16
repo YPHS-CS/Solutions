@@ -13,7 +13,7 @@ def move_files(source_dir):
         if "readme" not in filename.lower():
             # 构造源文件路径和目标文件路径
             
-            mp = {"ZEROJUDGE":"ZeroJudge", "CODEFORCES":"CodeForces"}
+            mp = {"ZEROJUDGE":"ZeroJudge", "CODEFORCES":"CodeForces", "TIOJ":"TIOJ", "APCS":"APCS"}
             # 移动文件
             
             
