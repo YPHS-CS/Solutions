@@ -34,7 +34,7 @@ def update_readme(source_dir):
         folder_path = os.path.join(source_dir, folder)
         for question in sorted(os.listdir(folder_path)):
             question_path = os.path.join(folder_path, question)
-            Solutions[folder].append((question, f"https://github.com/User-Howard/Solutions/tree/main/Solutions/{folder}/{question}"))
+            Solutions[folder].append((question, f"https://github.com/YPHS-CS/Solutions/tree/main/Solutions/{folder}/{question}"))
 
             cnt_all += len(os.listdir(question_path))
             cnt += 1
