@@ -21,4 +21,4 @@
 ### ZeroJudge
 [`a001`](https://github.com/User-Howard/Solutions/tree/main/Solutions/ZeroJudge/a001) [`a003`](https://github.com/User-Howard/Solutions/tree/main/Solutions/ZeroJudge/a003) [`a004`](https://github.com/User-Howard/Solutions/tree/main/Solutions/ZeroJudge/a004) [`a005`](https://github.com/User-Howard/Solutions/tree/main/Solutions/ZeroJudge/a005) [`a006`](https://github.com/User-Howard/Solutions/tree/main/Solutions/ZeroJudge/a006) [`a009`](https://github.com/User-Howard/Solutions/tree/main/Solutions/ZeroJudge/a009) [`a010`](https://github.com/User-Howard/Solutions/tree/main/Solutions/ZeroJudge/a010) 
 
-###### Last Updated: 2024-02-29 15:17:28
+###### Last Updated: 2024-02-29 15:20:50
