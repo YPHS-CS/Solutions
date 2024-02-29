@@ -42,18 +42,19 @@ def update_readme(source_dir):
     content = """
 # Solutions
 
-要互助這一個資料庫才可以好，不然現在看起來弱弱的。
-
+要互助這一個資料庫才可以好，不然現在看起來超弱的。
+```
 只能上傳在根目錄
 檔案名稱應該如下才可以
-```
-平台名稱-題目編號.副檔名
-```
 
+平台名稱-題目編號.副檔名
 如
-```ZEROJUDGE-a001.cpp```
+ZEROJUDGE-a001.cpp
+```
 
 """
+    content += f"`總共完成了 {cnt} 個題目。`\n"
+    content += f"`總共有 {cnt_all} 個解。`\n"
     for i in Solutions:
         content += f"### {i}\n"
         for j in Solutions[i]:
